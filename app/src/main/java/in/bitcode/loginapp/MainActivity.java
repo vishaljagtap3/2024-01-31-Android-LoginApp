@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
                 startActivity(homeActivityIntent);
 
-                finish();
+                //finish();
             }
             else {
                 Toast.makeText(MainActivity.this, "Login failed...", Toast.LENGTH_LONG).show();
