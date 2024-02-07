@@ -2,6 +2,7 @@ package in.bitcode.loginapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -33,7 +34,12 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Login Successful!", Toast.LENGTH_LONG).show();
                 //start home activity
                 Intent homeActivityIntent = new Intent(MainActivity.this, HomeActivity.class);
+
+                homeActivityIntent.putExtra("username", edtUsername.getText().toString());
+                homeActivityIntent.putExtra("rating", 5);
+
                 startActivity(homeActivityIntent);
+
                 finish();
             }
             else {

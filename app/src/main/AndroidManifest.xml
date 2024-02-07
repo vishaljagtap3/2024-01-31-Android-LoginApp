@@ -15,6 +15,8 @@
 
         <activity android:name=".HomeActivity"/>
 
+        <activity android:name=".ImagesActivity"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
